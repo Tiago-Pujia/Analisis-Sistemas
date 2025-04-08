@@ -19,7 +19,7 @@
   - [🤔 ¿Por qué es necesario el análisis?](#-por-qué-es-necesario-el-análisis)
   - [🧱 Proceso Unificado – Disciplina de Análisis](#-proceso-unificado--disciplina-de-análisis)
 - [📘 Libro de Craig Larman - UML y Patrones](#-libro-de-craig-larman---uml-y-patrones)
-  - [📖 Capítulo 9](#-capítulo-9)
+  - [📖 Capítulo 9 - Construcción de un Modelo Conceptual](#-capítulo-9---construcción-de-un-modelo-conceptual)
     - [Dominio del Problema](#dominio-del-problema)
     - [Modelo Conceptual (UML)](#modelo-conceptual-uml)
       - [Definición](#definición)
@@ -29,8 +29,11 @@
     - [Estrategias para Identificar Conceptos](#estrategias-para-identificar-conceptos)
       - [✅ Método 1: Lista de Categorías de Conceptos](#-método-1-lista-de-categorías-de-conceptos)
       - [✅ Método 2: Identificación de Frases Nominales](#-método-2-identificación-de-frases-nominales)
-  - [📖 Capítulo 10](#-capítulo-10)
-  - [📖 Capítulo 11](#-capítulo-11)
+    - [Definiciones Varias](#definiciones-varias)
+- [📖 Capítulo 10 – Agregación de las Asociaciones](#-capítulo-10--agregación-de-las-asociaciones)
+    - [Definición de Asociación](#definición-de-asociación)
+    - [Papeles y Multiplicidad](#papeles-y-multiplicidad)
+- [📖 Capítulo 11 – Agregación de los Atributos](#-capítulo-11--agregación-de-los-atributos)
 - [✅ Notas Finales](#-notas-finales)
 
 ---
@@ -129,7 +132,7 @@ La materia se centra en el modelo de casos de uso y una parte del analisis
 
 # 📘 Libro de Craig Larman - UML y Patrones
 
-## 📖 Capítulo 9
+## 📖 Capítulo 9 - Construcción de un Modelo Conceptual
 
 ### Dominio del Problema
 
@@ -201,10 +204,59 @@ Esta tecnica consiste en leer las descripciones texuales del dominio de un probl
 
 <!-- Definición de terminos en lenguaje orientado a objetos -->
 
-## 📖 Capítulo 10
+### Definiciones Varias
 
+- **Clase** → Describe un conjunto de objetos que comparten los mismos atributos, operaciones, metodos, relaciones y semanticas
+- **Operación** → Acción o servicio que puede solicitarse a un objeto para que lleve a cabo un comportamiento
+- **Metodo** → Implementación concreta de una operación, especificando el algoritmo o procedimiento que ejecuta dicha operación.
+- **Tipo** → Describe conjunto de objetos parecidos con atribututos y operaciones, pero no incluye metodos. Es una abstracción más general que la clase.
+- **Interfaz** → Conjunto de operaciones que un objeto expone al exterior
 
-## 📖 Capítulo 11
+# 📖 Capítulo 10 – Agregación de las Asociaciones
+
+### Definición de Asociación
+
+Como se vio en el capítulo anterior, una **asociación** es una **relación entre dos conceptos** que indica una **conexión bidireccional**. Se representa con líneas o flechas entre los conceptos, acompañada de un **nombre descriptivo**.
+
+🖼️ Ejemplo visual:  
+![Asociación](/imgs/larman/Asociacion.png)
+
+**Consejos:**
+- El nombre debe comenzar con mayúscula.
+- Al usar frases nominales, se utilizen guiones.
+- Evitar asociaciones redundantes** o derivables.
+- Es más importante identificar bien los conceptos** que las asociaciones.
+
+### Papeles y Multiplicidad
+
+A los extremenos de una asociación, se les llama **papeles**. Los papeles pueden tener diferentes caracteristicas, pero la que se vera ahora es la **Multiplicidad**.
+
+La **multiplicidad** indica **cuántas instancias** de un concepto pueden asociarse con otro.  
+📌 Es equivalente a la **cardinalidad** en los diagramas ER (entidad-relación) de bases de datos.
+
+🖼️ Ejemplo visual:  
+![Multiplicidad](/imgs/larman/multiplicidad.png)
+
+> _Una instancia individual de una **Tienda** puede estar asociada a **muchas** instancias de **Producto**._
+
+Notación común en multiplicidades:
+
+| Símbolo     | Significado                    |
+|-------------|--------------------------------|
+| `*`         | Cero o más                     |
+| `X`         | Exactamente X                  |
+| `X, Y, Z`   | Exactamente X, Y o Z           |
+| `X..Y`      | Desde X hasta Y (inclusive)    |
+
+🖼️ Repetición del ejemplo visual (para referencia):  
+![Multiplicidad](/imgs/larman//ejemplo-multiplicidad.png)
+
+# 📖 Capítulo 11 – Agregación de los Atributos
+
+> *(Contenido pendiente a desarrollar)*
+
+---
+
 
 
 ---
