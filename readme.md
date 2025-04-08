@@ -138,19 +138,17 @@ La materia se centra en el modelo de casos de uso y una parte del analisis
 
 📌 El **dominio** es independiente del software. Representa la comprensión del mundo real para luego plasmarla en un sistema.
 
----
-
 ### Modelo Conceptual (UML)
 
 #### Definición
 
-Un **modelo conceptual** representa, mediante **diagramas de estructura**, los conceptos principales del dominio del problema.  
-🚫 No describe software.  
-✅ Describe el **dominio del problema**.
+Un modelo conceptual **representa** mediante diagramas de estructuras, los conceptos principales del dominio del problema. No describe software, es una descripcion del dominio del problema.
 
 > Los problemas deben ser descompuestos en unidades comprensibles, para poder transformarlos en conceptos y representarlos en UML.
 
 #### ✏️ Elementos en la Representación UML
+
+La representación UML es muy similar a la DER vista en base de datos; dentro de los diagramas se representan:
 
 | Elemento                        | Representación                   |
 |---------------------------------|----------------------------------|
