@@ -18,6 +18,19 @@
   - [📏 Alcance del Sistema (Scope)](#-alcance-del-sistema-scope)
   - [🤔 ¿Por qué es necesario el análisis?](#-por-qué-es-necesario-el-análisis)
   - [🧱 Proceso Unificado – Disciplina de Análisis](#-proceso-unificado--disciplina-de-análisis)
+- [📘 Libro de Craig Larman - UML y Patrones](#-libro-de-craig-larman---uml-y-patrones)
+  - [📖 Capítulo 9](#-capítulo-9)
+    - [Dominio del Problema](#dominio-del-problema)
+    - [Modelo Conceptual (UML)](#modelo-conceptual-uml)
+      - [Definición](#definición)
+      - [✏️ Elementos en la Representación UML](#️-elementos-en-la-representación-uml)
+      - [📌 Definición de “Concepto”](#-definición-de-concepto)
+      - [🛠️ Pasos para Construir un Diagrama UML](#️-pasos-para-construir-un-diagrama-uml)
+    - [Estrategias para Identificar Conceptos](#estrategias-para-identificar-conceptos)
+      - [✅ Método 1: Lista de Categorías de Conceptos](#-método-1-lista-de-categorías-de-conceptos)
+      - [✅ Método 2: Identificación de Frases Nominales](#-método-2-identificación-de-frases-nominales)
+  - [📖 Capítulo 10](#-capítulo-10)
+  - [📖 Capítulo 11](#-capítulo-11)
 - [✅ Notas Finales](#-notas-finales)
 
 ---
@@ -111,6 +124,90 @@ Se mide por:
 5. Verificado por → Modelo de pruebas  
 
 La materia se centra en el modelo de casos de uso y una parte del analisis
+
+---
+
+# 📘 Libro de Craig Larman - UML y Patrones
+
+## 📖 Capítulo 9
+
+### Dominio del Problema
+
+> _"El dominio del problema es el contexto y entorno del mundo real en el que el sistema va a operar. Es decir, la parte del mundo que se desea modelar o sobre la cual se desea influir con el sistema de software."_  
+> — *Craig Larman*
+
+📌 El **dominio** es independiente del software. Representa la comprensión del mundo real para luego plasmarla en un sistema.
+
+---
+
+### Modelo Conceptual (UML)
+
+#### Definición
+
+Un **modelo conceptual** representa, mediante **diagramas de estructura**, los conceptos principales del dominio del problema.  
+🚫 No describe software.  
+✅ Describe el **dominio del problema**.
+
+> Los problemas deben ser descompuestos en unidades comprensibles, para poder transformarlos en conceptos y representarlos en UML.
+
+#### ✏️ Elementos en la Representación UML
+
+| Elemento                        | Representación                   |
+|---------------------------------|----------------------------------|
+| **Conceptos / Entidades**       | Cuadrado con cabecera            |
+| **Atributos / Características** | Lista debajo de la cabecera      |
+| **Asociaciones / Relaciones**   | Flechas o líneas entre conceptos |
+
+**Ejemplo de diagrama UML:**
+
+![UML-Introducción](/imgs/larman/UML-introduccion.png)
+
+Hay otros temas en la imagen que seran vistas mas adelante en el capitulo 10
+
+#### 📌 Definición de “Concepto”
+
+Un **concepto** es una idea, cosa u objeto. Se descompone en:
+- **Símbolo** → Palabras o imágenes que representan el concepto (cabecera del cuadrado UML)
+- **Intensión** → Definición del concepto o la idea
+- **Extensión** → Conjunto de ejemplos
+
+#### 🛠️ Pasos para Construir un Diagrama UML
+
+1. Obtenga los conceptos
+2. Dibújelos en un modelo conceptual
+3. Incorpore asociaciones
+4. Agregue atributos
+
+### Estrategias para Identificar Conceptos
+
+> _"Es mejor exagerar y especificar un modelo conceptual con muchos conceptos refinados que no especificarlo cabalmente."_
+
+Existen 2 métodos principales (siendo el primero el más utilizado):
+
+#### ✅ Método 1: Lista de Categorías de Conceptos
+
+Crear una tabla con dos columnas: “Categoría del Concepto” y “Ejemplo” y agrupar conceptos bajo categorías comunes.
+
+| 🗂️ Categoría del Concepto     | 🧱 Ejemplo              | 
+|-------------------------------|--------------------------|
+| Lugares                       | Tiendas, Aeropuertos     |
+| Transacciones                 | Venta, Pago, Reservación |
+| Papeles de Personas           | Cajero, Piloto           |
+| Contenedores de otras cosas   | Tienda, Cesto, Avión     |
+
+#### ✅ Método 2: Identificación de Frases Nominales
+
+Una **frase nominal** es un conjunto de palabras que tiene un sustantivo como núcleo. Ejemplos: "Cliente registrado", "Factura electrónica", "Lista de productos", "Total de la compra", "Número de pedido".
+
+Esta tecnica consiste en leer las descripciones texuales del dominio de un problema, y detectar frases nominales que podrian representar conceptos.
+
+<!-- Definición de terminos en lenguaje orientado a objetos -->
+
+## 📖 Capítulo 10
+
+
+## 📖 Capítulo 11
+
 
 ---
 
