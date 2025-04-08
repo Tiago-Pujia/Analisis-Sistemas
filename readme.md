@@ -8,6 +8,9 @@
 
 ## 📑 Índice
 
+
+
+
 - [📘 Análisis de Sistemas](#-análisis-de-sistemas)
   - [📑 Índice](#-índice)
 - [🧠 Clase 1 – Repaso](#-clase-1--repaso)
@@ -30,10 +33,12 @@
       - [✅ Método 1: Lista de Categorías de Conceptos](#-método-1-lista-de-categorías-de-conceptos)
       - [✅ Método 2: Identificación de Frases Nominales](#-método-2-identificación-de-frases-nominales)
     - [Definiciones Varias](#definiciones-varias)
-- [📖 Capítulo 10 – Agregación de las Asociaciones](#-capítulo-10--agregación-de-las-asociaciones)
+  - [📖 Capítulo 10 – Agregación de las Asociaciones](#-capítulo-10--agregación-de-las-asociaciones)
     - [Definición de Asociación](#definición-de-asociación)
     - [Papeles y Multiplicidad](#papeles-y-multiplicidad)
-- [📖 Capítulo 11 – Agregación de los Atributos](#-capítulo-11--agregación-de-los-atributos)
+  - [📖 Capítulo 11 – Agregación de los Atributos](#-capítulo-11--agregación-de-los-atributos)
+    - [¿Qué es un Atributo?](#qué-es-un-atributo)
+    - [Tipos de Atributos según UML](#tipos-de-atributos-según-uml)
 - [✅ Notas Finales](#-notas-finales)
 
 ---
@@ -163,6 +168,8 @@ La representación UML es muy similar a la DER vista en base de datos; dentro de
 
 ![UML-Introducción](/imgs/larman/UML-introduccion.png)
 
+Por ejemplo, un recibo de ventas normalmente incluye la fecha y la hora. En consecuencia, el concepto _Venta_ requiere los atributos _fecha_ y _hora_.
+
 Hay otros temas en la imagen que seran vistas mas adelante en el capitulo 10
 
 #### 📌 Definición de “Concepto”
@@ -212,7 +219,7 @@ Esta tecnica consiste en leer las descripciones texuales del dominio de un probl
 - **Tipo** → Describe conjunto de objetos parecidos con atribututos y operaciones, pero no incluye metodos. Es una abstracción más general que la clase.
 - **Interfaz** → Conjunto de operaciones que un objeto expone al exterior
 
-# 📖 Capítulo 10 – Agregación de las Asociaciones
+## 📖 Capítulo 10 – Agregación de las Asociaciones
 
 ### Definición de Asociación
 
@@ -251,13 +258,41 @@ Notación común en multiplicidades:
 🖼️ Repetición del ejemplo visual (para referencia):  
 ![Multiplicidad](/imgs/larman//ejemplo-multiplicidad.png)
 
-# 📖 Capítulo 11 – Agregación de los Atributos
+## 📖 Capítulo 11 – Agregación de los Atributos
 
-> *(Contenido pendiente a desarrollar)*
+### ¿Qué es un Atributo?
 
----
+Como se introdujo en el Capítulo 9, un atributo representa una **característica** de un objeto o concepto en el modelo.
 
+📌 **Ejemplo práctico**:  
+Un _recibo de ventas_ normalmente incluye la *fecha* y la _hora_.  
+Por lo tanto, el concepto *Venta* debe tener los atributos `fecha` y `hora`.
 
+### Tipos de Atributos según UML
+
+Según Larman, los atributos pueden clasificarse en 3 categorías principales:
+
+1. **Simples o Valores Puros**
+
+Son valores indivisibles y básicos, atomicos. Ejemplos:
+- `Boolean` → Verdadero / Falso
+- `String` → Cadenas de texto
+- `Integer` / `Decimal` → Números
+- `Date`, `Time` → Fechas y horas
+
+2. **Complejos o Compuestos**
+
+Son estructuras que agrupan varios atributos.  
+❗️ **Importante**: Larman recomienda evitar estos tipos de atributos en UML.  
+
+3. **Enumeraciones**
+
+Conjunto de valores limitados y definidos.  
+Se utiliza para representar categorías, estados o clasificaciones. Ejemplo:
+```
+plaintext
+Sexo = { Masculino, Femenino }
+```
 
 ---
 
